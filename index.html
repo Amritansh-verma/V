@@ -1,0 +1,130 @@
+<!-- Index Page: Valentine's Day Introduction -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Special</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        body {
+            font-family: 'Pacifico', cursive;
+            background: url('https://www.transparenttextures.com/patterns/soft-circle-scales.png'), rgba(255, 182, 193, 0.5);
+            background-blend-mode: overlay;
+            text-align: center;
+            color: #b3003b;
+            position: relative;
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+        }
+        .big-heart {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Red_Heart.svg/1200px-Red_Heart.svg.png') center/contain no-repeat;
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+        }
+        .container {
+            margin-top: 50px;
+            position: relative;
+        }
+        .button {
+            background-color: red;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="big-heart"></div>
+    <div class="container">
+        <h1>Happy Valentine's Day! <span class="heart">❤❤</span></h1>
+        <p>My love, today is not just a day, it is a celebration of the beautiful bond we share.</p>
+        <p>Every moment with you is a treasure, every smile of yours is my happiness.</p>
+        <p>You are my light, my joy, my heart, and my everything.</p>
+        <p>On this special day, let’s celebrate our love that grows stronger with each passing moment.</p>
+        <a href="proposal.html" class="button">Go to the Proposal</a>
+    </div>
+</body>
+</html>
+
+<!-- Proposal Page: Love Confession -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Proposal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        body {
+            font-family: 'Pacifico', cursive;
+            background: url('https://www.transparenttextures.com/patterns/soft-circle-scales.png'), rgba(255, 182, 193, 0.5);
+            background-blend-mode: overlay;
+            text-align: center;
+            color: #b3003b;
+            position: relative;
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+        }
+        .big-heart {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Red_Heart.svg/1200px-Red_Heart.svg.png') center/contain no-repeat;
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+        }
+        .container {
+            margin-top: 50px;
+            position: relative;
+        }
+        .button {
+            background-color: red;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="big-heart"></div>
+    <div class="container">
+        <h1>To the Love of My Life <span class="heart">❤❤</span></h1>
+        <p>From the moment I met you, my world became brighter. You are the melody to my song and the rhythm to my heart.</p>
+        <p>Your laughter is my favorite sound, your eyes my favorite sight, and your love my most cherished treasure.</p>
+        <p>Every heartbeat of mine whispers your name, every second I long to be by your side.</p>
+        <p>On this special day, I have only one question to ask...</p>
+        <h2>Will you be my Valentine? <span class="heart">💖</span></h2>
+        <a href="yes.html" class="button" onclick="showHearts()">Yes, I Will!</a>
+    </div>
+    <script>
+        function showHearts() {
+            for (let i = 0; i < 100; i++) {
+                let heart = document.createElement("div");
+                heart.innerHTML = "❤️😘";
+                heart.style.position = "absolute";
+                heart.style.left = Math.random() * window.innerWidth + "px";
+                heart.style.top = Math.random() * window.innerHeight + "px";
+                heart.style.fontSize = "30px";
+                document.body.appendChild(heart);
+                setTimeout(() => heart.remove(), 2000);
+            }
+        }
+    </script>
+</body>
+</html>
